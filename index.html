@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick And Morty API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Rick and Morty API</h1>
+        <button class="btnObtener" id="obtenerPersonajes">Obtener todos los personajes</button>
+        <div class="inputs">
+            <label for="nameFilter">Nombre:</label>
+            <input type="text" id="nameFilter" placeholder="Escribe un nombre">
+            <label for="statusFilter">Estado:</label>
+            <select id="statusFilter">
+                <option value="">Todos</option>
+                <option value="alive">Alive</option>
+                <option value="dead">Dead</option>
+                <option value="unknown">Unknown</option>
+            </select>
+            <label for="speciesFilter">Especie:</label>
+            <input type="text" id="speciesFilter" placeholder="Escribe una especie">
+            <label for="typeFilter">Tipo:</label>
+            <input type="text" id="typeFilter" placeholder="Escribe un tipo">
+            <label for="genderFilter">Género:</label>
+            <select id="genderFilter">
+                <option value="">Todos</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="genderless">Genderless</option>
+                <option value="unknown">Unknown</option>
+            </select>
+            <div class="button">
+                <button id="filtrarPersonajes">Filtrar</button>
+            </div>
+        </div>
+    </nav>
+    <div id="allCharacters"></div>
+    <div id="error"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
